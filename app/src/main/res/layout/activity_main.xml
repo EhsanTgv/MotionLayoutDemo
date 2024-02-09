@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/title_txt"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Beautiful Geometry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/background_imageView" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_txt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/description_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Et odio pellentesque diam volutpat commodo sed. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. In eu mi bibendum neque egestas congue quisque. Ac ut consequat semper viverra nam libero justo laoreet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Aenean et tortor at risus viverra adipiscing. Molestie a iaculis at erat pellentesque adipiscing commodo elit.
+
+Sollicitudin tempor id eu nisl nunc mi ipsum. Et pharetra pharetra massa massa ultricies mi. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Enim eu turpis egestas pretium aenean pharetra magna ac. Pellentesque habitant morbi tristique senectus. Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Lacus vel facilisis volutpat est velit. Nisi quis eleifend quam adipiscing vitae proin. Donec ultrices tincidunt arcu non sodales neque sodales ut.
+
+Vulputate mi sit amet mauris commodo quis. Erat velit scelerisque in dictum non consectetur a. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Amet purus gravida quis blandit turpis cursus in. Gravida in fermentum et sollicitudin ac orci. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Senectus et netus et malesuada. Fusce id velit ut tortor. Scelerisque purus semper eget duis. Id nibh tortor id aliquet lectus proin nibh nisl. Molestie nunc non blandit massa. Sagittis orci a scelerisque purus semper eget duis at. A cras semper auctor neque vitae tempus quam pellentesque. Lectus urna duis convallis convallis tellus id interdum. Malesuada proin libero nunc consequat interdum varius sit. Cras tincidunt lobortis feugiat vivamus at augue.
+
+Gravida dictum fusce ut placerat orci nulla. In nibh mauris cursus mattis molestie a iaculis at. Convallis a cras semper auctor neque vitae tempus. Bibendum neque egestas congue quisque. Elit ullamcorper dignissim cras tincidunt lobortis. Nunc id cursus metus aliquam eleifend mi in. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Sit amet tellus cras adipiscing enim eu. Velit euismod in pellentesque massa placerat duis. Hendrerit gravida rutrum quisque non tellus orci ac. Laoreet sit amet cursus sit. Congue mauris rhoncus aenean vel elit scelerisque. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Sit amet consectetur adipiscing elit. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Sit amet consectetur adipiscing elit duis. Est ullamcorper eget nulla facilisi etiam dignissim. Id ornare arcu odio ut sem nulla pharetra diam.
+
+Ornare lectus sit amet est placerat in egestas erat. Nunc sed blandit libero volutpat sed cras. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Massa enim nec dui nunc mattis enim. Convallis aenean et tortor at risus viverra. Eget duis at tellus at. In pellentesque massa placerat duis ultricies. Viverra justo nec ultrices dui sapien eget. Gravida quis blandit turpis cursus in hac habitasse. Nisi porta lorem mollis aliquam ut porttitor." />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.motion.widget.MotionLayout>
